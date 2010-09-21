@@ -103,11 +103,13 @@ public class IntervalHTTPCheckerService extends Service
 		Notification notification = new Notification(R.drawable.icon, message, System.currentTimeMillis());
 		SharedPreferences settings = getSharedPreferences(IntervalHTTPChecker.PREFS_NAME, 0);
 		String url = settings.getString("notification_url", "http://google.com");
-		Intent i = new Intent(Intent.ACTION_VIEW);
-		i.setData(Uri.parse(url));
-		PendingIntent contentIntent = PendingIntent.getActivity(this,0,i,0);
+		Intent intent = new Intent(Intent.ACTION_VIEW);
+		intent.setData(Uri.parse(url));
+		PendingIntent contentIntent = PendingIntent.getActivity(this,0,intent,0);
 		
-		notification.setLatestEventInfo(this, title, message, contentIntent);		
+		notification.setLatestEventInfo(this, title, message, contentIntent);
+		notification.flags = Notification.FLAG_AUTO_CANCEL;
+		notification.defaults = Notification.DEFAULT_VIBRATE;
 		nm_.notify(R.string.service_notification_title, notification);
 	}
 	

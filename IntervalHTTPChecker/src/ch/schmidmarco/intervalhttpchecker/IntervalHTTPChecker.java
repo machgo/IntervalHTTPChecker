@@ -58,7 +58,7 @@ public class IntervalHTTPChecker extends Activity implements OnClickListener
         Integer value = settings.getInt("timer_setting", 10000);
         editTextTimerSetting.setText(value.toString());
         editTextRequestUrl.setText(settings.getString("request_url", "http://url/file.php"));
-        editTextNotificationUrl.setText(settings.getString("notification_url", "http://url/file.php"));
+        editTextNotificationUrl.setText(settings.getString("notification_url", "http://google.com"));
     }
     
     public void onClick(View src)

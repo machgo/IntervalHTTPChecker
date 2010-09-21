@@ -65,9 +65,10 @@ public class IntervalHTTPCheckerService extends Service
 	@Override
 	public void onCreate()
 	{
+		super.onCreate();
 		nm_ = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
 		
-		Toast.makeText(this, "Started service", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, getText(R.string.toast_service_started), Toast.LENGTH_SHORT).show();
 		runnable_.run();
 	}
 	
@@ -81,7 +82,8 @@ public class IntervalHTTPCheckerService extends Service
 	@Override
 	public void onDestroy()
 	{
-		Toast.makeText(this, "Stopped service", Toast.LENGTH_SHORT).show();
+		super.onDestroy();
+		Toast.makeText(this, getText(R.string.toast_service_stopped), Toast.LENGTH_SHORT).show();
 	}
 	
 	private void UpdateNewsStatus ()

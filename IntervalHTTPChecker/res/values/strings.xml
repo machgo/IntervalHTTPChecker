@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<!-- AppName -->
     <string name="app_name">IntervalHTTPChecker</string>
     
+    <!-- GUI-Labels -->
     <string name="lbl_service_controls">Dienst starten/stoppen</string>
     <string name="lbl_button_start_service">Starten</string>
     <string name="lbl_button_stop_service">Stoppen</string>
@@ -10,11 +12,17 @@
     <string name="lbl_settings_request_url">Request-Url</string>
     <string name="lbl_settings_notification_url">Url bei Tippen auf Notification</string>
     <string name="lbl_settings_timer_setting">Zeitabstand</string>
+	
+	<!-- Toast Messages -->
+    <string name="toast_service_started">Dienst gestartet</string>
+    <string name="toast_service_stopped">Dienst gestoppt</string>
     
-
+    <!-- Notification Messages -->
     <string name="service_notification_title">IntervalHTTPCheckerService</string>
     <string name="service_notification_text_new_message">Neue Nachrichten</string>
     
+    <!-- System Keywords -->
+    <string name="system_empty_keyword">empty</string>
 
 </resources>
 

@@ -2,11 +2,89 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
+    android:layout_height="fill_parent">
+
 <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+    android:text="@string/lbl_service_controls"
+    android:textSize="30px">
+</TextView>
+
+<Button
+	android:text="@string/lbl_button_start_service"
+	android:id="@+id/ButtonStart"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+</Button>
+
+<Button 
+	android:text="@string/lbl_button_stop_service"
+	android:id="@+id/ButtonStop" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+</Button>
+    
+<TextView
+	android:text="@string/lbl_settings" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_marginTop="30px" android:textSize="30px">
+</TextView>
+
+<TextView
+	android:text="@string/lbl_settings_request_url" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_marginTop="10px">
+</TextView>
+
+<EditText 
+	android:text=""
+	android:id="@+id/EditTextRequestUrl" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:singleLine="true">
+</EditText>
+
+<TextView
+	android:text="@string/lbl_settings_notification_url" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_marginTop="10px">
+</TextView>
+
+<EditText 
+	android:text=""
+	android:id="@+id/EditTextNotificationUrl" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:singleLine="true">
+</EditText>
+
+<TextView 
+	android:text="@string/lbl_settings_timer_setting" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_marginTop="10px">
+</TextView>
+
+<EditText 
+	android:text=""
+	android:id="@+id/EditTextTimerSetting"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:numeric="integer"
+	android:width="240px">
+</EditText>
+
+<Button 
+	android:text="@string/lbl_button_save_settings" 
+	android:id="@+id/ButtonSaveSettings" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+</Button>    
+    
+    
+  
 </LinearLayout>

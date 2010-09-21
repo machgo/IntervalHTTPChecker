@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, IntervalHTTPChecker!</string>
     <string name="app_name">IntervalHTTPChecker</string>
+    
+    <string name="lbl_service_controls">Dienst starten/stoppen</string>
+    <string name="lbl_button_start_service">Starten</string>
+    <string name="lbl_button_stop_service">Stoppen</string>
+    <string name="lbl_button_save_settings">Einstellungen speichern</string>
+    <string name="lbl_settings">Einstellungen</string>
+    <string name="lbl_settings_request_url">Request-Url</string>
+    <string name="lbl_settings_notification_url">Url bei Tippen auf Notification</string>
+    <string name="lbl_settings_timer_setting">Zeitabstand</string>
+    
+
+    <string name="service_notification_title">IntervalHTTPCheckerService</string>
+    <string name="service_notification_text_new_message">Neue Nachrichten</string>
+    
+
 </resources>
+

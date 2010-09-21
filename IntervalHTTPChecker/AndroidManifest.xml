@@ -11,8 +11,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+       
+		<service android:enabled="true" android:name=".IntervalHTTPCheckerService">
+		</service>
 
     </application>
+    
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 
 </manifest> 

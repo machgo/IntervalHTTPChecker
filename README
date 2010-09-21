@@ -1,0 +1,3 @@
+I made this application for learning android-development..
+
+IntervalHTTPChecker includes a simple service, which checks a defined http-url in on a defined time. If the requested page is differet from the last one, it shows a simple notification.
